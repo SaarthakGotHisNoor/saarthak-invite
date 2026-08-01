@@ -539,7 +539,7 @@
     let cleared = 0;
     for(let i=3;i<data.length;i+=4*20){ if(data[i] === 0) cleared++; }
     const total = data.length / (4*20);
-    if(cleared/total > 0.25){
+    if(cleared/total > 0.15){
       revealed = true;
       canvas.classList.add('done');
       document.querySelector('.scratch-hint').classList.add('done');
